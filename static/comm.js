@@ -24,10 +24,7 @@ button.onclick = function () {
                 alert("something is wrong")
             }
         }).then(jsonResponse => {
-
-            // Log the response data in the console
-            console.log(jsonResponse)
-        }
-        ).catch((err) => console.error(err));
+            data.innerHTML += "<p>" + jsonResponse + "</p>"
+        }).catch((err) => console.error(err));
 
 }

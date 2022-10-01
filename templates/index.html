@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <!--- D3 Import --->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!--- D3 Import --->
+</head>
+
+<body>
+    <svg id="map" height="600" width="800" style="border:1px solid black"></svg>
+
+    <button style="display: block; margin-top: 5%" id="submit">Post to Python</button>
+    <h3 id="info"></h3>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'comm.js') }}"></script>
+
+    <script>
+        // let arr = []
+        // for (let c = 0; c <= 800; c = c + 1) {
+        //     for (let i = 0; i <= 800; i++) {
+        //         arr[c][i] = 0
+        //     }
+        // }
+
+        // function plot(array, x, y) {
+        //     array[x][y] = 1
+        // }
+        // function drawCircle(x0, y0, radius, array) {
+        //     x = x0 + radius;
+        //     y = y0;
+
+        //     plot(array, x, y);
+
+        //     while (x > x0) {
+        //         x = x - 1;
+        //         if (p < 0) {
+        //             p = p + 2 * y + 1;
+        //         } else {
+        //             y = y + 1;
+        //             p = p + 2 * (y - x) + 1;
+        //         }
+        //         plot(array, x, y);
+        //     }
+        // }
+        const svg = d3.select("svg#map");
+        // const width = svg.attr("width")
+        // const height = svg.attr("height");
+        // const xExtent = d3.extent(arr, d => d['h'])
+        // const yExtent = d3.extent(arr, d => d['c'])
+        // const pad = 10
+        // const xScale = d3.scaleLinear().domain(xExtent).range([pad, width - pad])
+        // const yScale = d3.scaleLinear().domain(yExtent).range([height - pad, pad])
+
+        // function updateMap(squares) {
+        //     squares.enter()
+        //         .append("rect")
+        //         .attr("x", d => ['width'])
+        //         .attr("y", d => d['height'])
+        //         .attr("width", 1)
+        //         .attr("height", 1)
+        //         .attr("fill", "black")
+        //         .merge(elements)
+
+        //     squares.on("mouseover", function () {
+        //         d3.select(this)
+        //             .transition().duration(500)
+        //             .attr("stroke", "black")
+        //             .style("fill", "black")
+
+        //     })
+        // }
+        // let squares = chartArea.selectAll("rect")
+
+    </script>
+</body>
+
+</html>
